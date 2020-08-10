@@ -1,0 +1,7 @@
+feature-flags:
+  feature1:
+    enabled: true
+  feature2:
+    enabled: false
+  feature3:
+    enabled: true

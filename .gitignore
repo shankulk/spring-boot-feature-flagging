@@ -1,0 +1,12 @@
+# Gradle
+**/build
+.gradle
+
+# IDE/OS
+**/*.iml
+
+.idea/*
+!.idea/runConfigurations
+
+**/out/
+**/.DS_Store
