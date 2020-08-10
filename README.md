@@ -2,12 +2,13 @@
 Demonstrates how to feature flag spring beans
 
 ### What this application includes
-There are three `@Component` spring beans viz. 
+<p>There are three `@Component` spring beans viz. 
 1. `FeatureOne.java`
 1. `FeatureTwo.java`
 1. `FeatureThree.java`
-And an `application.yml` spring config file which has feature flags' values.
-Note that all these components are annotated with `@ConditionalOnProperty` annotation.
+  <p/>
+<p>And an `application.yml` spring config file which has feature flags' values.
+Note that all these components are annotated with `@ConditionalOnProperty` annotation. <p/>
 ### Enabling features
 Based on which feature should be enabled, set the value of feature flags in `application.yml` file.
 ### Running the application
