@@ -1,4 +1,9 @@
 feature-flags:
+  publishing:
+    enabled: ${PUBLISHING_ENABLED}
+
+
+
   feature1:
     enabled: true
   feature2:

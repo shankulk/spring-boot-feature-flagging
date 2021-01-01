@@ -2,6 +2,7 @@ plugins {
 	id 'org.springframework.boot' version '2.3.2.RELEASE'
 	id 'io.spring.dependency-management' version '1.0.9.RELEASE'
 	id 'java'
+	id 'com.github.sherter.google-java-format' version '0.9'
 }
 
 group = 'com.shankulk'
@@ -13,7 +14,7 @@ repositories {
 }
 
 dependencies {
-	implementation 'org.springframework.boot:spring-boot-starter'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
 	testImplementation('org.springframework.boot:spring-boot-starter-test') {
 		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
 	}
@@ -22,3 +23,5 @@ dependencies {
 test {
 	useJUnitPlatform()
 }
+
+compileJava.mustRunAfter verifyGoogleJavaFormat

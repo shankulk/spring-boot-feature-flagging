@@ -24,8 +24,7 @@ public class FeatureFlaggingApplication {
 
   @PostConstruct
   public void printEnabledBeanNames() {
-    Arrays
-        .stream(applicationContext.getBeanNamesForType(Feature.class))
+    Arrays.stream(applicationContext.getBeanNamesForType(Feature.class))
         .sorted()
         .forEach(System.out::println);
   }
